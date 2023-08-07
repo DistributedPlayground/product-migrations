@@ -1,15 +1,19 @@
 -- +goose Up
 
--- create extension for UUID ----------------------------------------------------
+-- create extension for UUID ---------------------------------------------------
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
+-- create update function ------------------------------------------------------
+-- +goose StatementBegin
 CREATE OR REPLACE FUNCTION update_updated_at_column()
-    RETURNS TRIGGER AS $$
+	RETURNS TRIGGER AS
+$$
 BEGIN
-    NEW.updated_at = now();
-    RETURN NEW;
+	NEW.updated_at = now();
+	RETURN NEW;
 END;
 $$ language 'plpgsql';
+-- +goose StatementEnd
 
 -- create tables ----------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS collection (
@@ -18,7 +22,7 @@ CREATE TABLE IF NOT EXISTS collection (
     updated_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP,
     deleted_at TIMESTAMP WITH TIME ZONE DEFAULT NULL,
     name TEXT DEFAULT '',
-    description TEXT DEFAULT '',
+    description TEXT DEFAULT ''
 );
 
 CREATE TABLE IF NOT EXISTS product (
