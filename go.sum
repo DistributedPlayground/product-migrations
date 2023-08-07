@@ -1,0 +1,6 @@
+github.com/DistributedPlayground/go-lib v0.0.0-20230807172717-94ee2a154da5 h1:SC9RGXs0PWw9kGSzY7blFAISBEklEsAXJhwrw6vMb/Y=
+github.com/DistributedPlayground/go-lib v0.0.0-20230807172717-94ee2a154da5/go.mod h1:rh4l1/+eFUBWpr/jW2NMrFVlnhZ86Ph2A6onxDkNyYc=
+github.com/lib/pq v1.10.9 h1:YXG7RB+JIjhP29X+OtkiDnYaXQwpS4JEWq7dtCCRUEw=
+github.com/lib/pq v1.10.9/go.mod h1:AlVN5x4E4T544tWzH6hKfbfQvm3HdbOxrmggDNAPY9o=
+github.com/pressly/goose/v3 v3.14.0 h1:gNrFLLDF+fujdq394rcdYK3WPxp3VKWifTajlZwInJM=
+github.com/pressly/goose/v3 v3.14.0/go.mod h1:uwSpREK867PbIsdE9GS6pRk1LUPB7gwMkmvk9/hbIMA=
