@@ -9,7 +9,6 @@ import (
 	env "github.com/DistributedPlayground/go-lib/config"
 
 	"github.com/DistributedPlayground/product-migrations/config"
-	_ "github.com/DistributedPlayground/product-migrations/migrations"
 	_ "github.com/lib/pq"
 	"github.com/pressly/goose/v3"
 )
