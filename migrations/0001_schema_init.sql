@@ -46,6 +46,8 @@ CREATE OR REPLACE TRIGGER update_product_updated_at
 -- +goose Down
 DROP TABLE IF EXISTS product;
 
+DROP TABLE IF EXISTS collection;
+
 DROP FUNCTION IF EXISTS update_updated_at_column;
 
 DROP EXTENSION IF EXISTS "uuid-ossp";
