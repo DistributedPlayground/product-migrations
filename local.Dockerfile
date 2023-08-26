@@ -1,7 +1,5 @@
 FROM golang:1.19.3
 
-ENV GOPRIVATE=github.com/DistributedPlayground/*
-
 RUN apt update && apt upgrade -y && \
 	apt install -y git \
 	make openssh-client
